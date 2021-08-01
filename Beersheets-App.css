@@ -7,6 +7,7 @@ body {
 .type-container,
 .QB-container {
 	display: flex;
+	flex-wrap: wrap;
 }
 .team-item,
 .type-item,
@@ -29,9 +30,11 @@ body {
 }
 
 input {
-	width: 20rem;
+	width: 208px;
+	max-width: 100%;
 	border-radius: 8px;
 	padding: 10px;
+	padding-right: 0px;
 }
 
 form {
