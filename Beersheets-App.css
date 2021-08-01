@@ -36,7 +36,12 @@ input {
 	padding: 10px;
 	padding-right: 0px;
 }
-
+@media (min-width: 420px) {
+	input {
+		width: 95%;
+		max-width: 25rem;
+	}
+}
 form {
 	margin-top: 20px;
 }
