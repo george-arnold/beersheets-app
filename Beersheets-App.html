@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Beersheets App</title>
+
+		<meta charset="UTF-8" />
+
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+		<meta name="description" content="" />
+
+		<link rel="stylesheet" type="text/css" href="Beersheets-App.css" />
+		<link rel="stylesheet" type="text/css" href="Fade-In-Loader.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<div id="loader"></div>
+
+		<h1>The Beer Sheets Web Application</h1>
+
+		<h2>Number of Teams in the League</h2>
+		<div class="teams-container">
+			<div id="team16" class="team-item">
+				<h3>16 Teams</h3>
+			</div>
+			<div id="team14" class="team-item">
+				<h3>14 Teams</h3>
+			</div>
+			<div id="team12" class="selected team-item">
+				<h3>12 Teams</h3>
+			</div>
+			<div id="team10" class="team-item">
+				<h3>10 Teams</h3>
+			</div>
+			<div id="team8" class="team-item">
+				<h3>8 Teams</h3>
+			</div>
+		</div>
+		<h2>Type of Draft</h2>
+		<div class="type-container">
+			<div class="selected type-item">
+				<h3>Snake</h3>
+			</div>
+			<div class="type-item">
+				<h3>Linear</h3>
+			</div>
+		</div>
+		<h2>Number of QBs</h2>
+		<div class="QB-container">
+			<div class="selected QB-item">
+				<h3>1 QB</h3>
+			</div>
+			<div class="QB-item">
+				<h3>2 QB/Superflex</h3>
+			</div>
+		</div>
+		<h2 class="optional">Sleeper URL (optional)</h2>
+		<div>
+			<label class="sr-only">Draft URL for Sleeper League:</label>
+			<input placeholder="Copy and Paste URL Here" />
+		</div>
+		<form>
+			<input type="button" class="button submit-button" value="Submit" />
+		</form>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			crossorigin="anonymous"
+		></script>
+
+		<script type="text/javascript">
+			window.onload = function () {
+				setTimeout(function () {
+					document.getElementById('loader').remove();
+				}, 1000);
+			};
+		</script>
+		<script type="text/javascript" src="Beersheets-App.js"></script>
+	</body>
+</html>
